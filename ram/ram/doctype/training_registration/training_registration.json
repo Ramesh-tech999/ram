@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:student_name",
+ "creation": "2023-06-10 10:36:48.570409",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_name",
+  "amount_inr",
+  "amount_usd",
+  "total_amount_with_gst_inr",
+  "courses_names",
+  "address_details_section",
+  "address_line_1",
+  "address_line_2",
+  "city",
+  "state",
+  "country",
+  "column_break_krax",
+  "postal_code",
+  "contact_no",
+  "company_gstin",
+  "pan_no",
+  "other_details_section",
+  "level_of_expertise",
+  "where_did_you_hear_about_us",
+  "i_want_the_invoice_generated_in_my_companys_name",
+  "company",
+  "column_break_azxt",
+  "what_are_expectations_from_this_program"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student name",
+   "unique": 1
+  },
+  {
+   "fieldname": "amount_inr",
+   "fieldtype": "Float",
+   "label": "Amount (INR)"
+  },
+  {
+   "fieldname": "amount_usd",
+   "fieldtype": "Float",
+   "label": "Amount (USD)"
+  },
+  {
+   "fieldname": "total_amount_with_gst_inr",
+   "fieldtype": "Float",
+   "label": "Total Amount with GST (INR)"
+  },
+  {
+   "fieldname": "courses_names",
+   "fieldtype": "Data",
+   "label": "Courses names",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address_details_section",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address Line 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_krax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Int",
+   "label": "Postal Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Phone",
+   "label": "Contact No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_gstin",
+   "fieldtype": "Data",
+   "label": "Company GSTIN"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN No"
+  },
+  {
+   "fieldname": "other_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "level_of_expertise",
+   "fieldtype": "Select",
+   "label": "Level of Expertise",
+   "options": "Beginner\nMedium\nExpert",
+   "reqd": 1
+  },
+  {
+   "fieldname": "where_did_you_hear_about_us",
+   "fieldtype": "Data",
+   "label": "Where did you hear about us?"
+  },
+  {
+   "default": "0",
+   "fieldname": "i_want_the_invoice_generated_in_my_companys_name",
+   "fieldtype": "Check",
+   "label": "I want the invoice generated in my Company's name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "column_break_azxt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "what_are_expectations_from_this_program",
+   "fieldtype": "Small Text",
+   "label": "What are expectations from this program?",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-12 11:13:39.052840",
+ "modified_by": "Administrator",
+ "module": "Ram",
+ "name": "Training Registration",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
